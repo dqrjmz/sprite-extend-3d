@@ -13,6 +13,9 @@ function updateRotation({attributes}, {rotation}) {
   return ops.some(o => o);
 }
 
+/**
+ * 3d节点
+ */
 export default class Node3d extends Node {
   static Attr = Node3dAttr;
 

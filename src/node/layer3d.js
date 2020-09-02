@@ -176,6 +176,11 @@ export default class Layer3D extends Layer {
   }
 
   /* {vertex, fragment, uniforms = {}} */
+  /**
+   * 创建着色器程序
+   * @param {*} param0 
+   * @param {*} param1 
+   */
   createProgram({attributes, texture, normalMap, bumpMap, uniforms, ...options} = {}, {attributes: extraAttributes, uniforms: extraUniforms} = {}) {
     const gl = this.renderer.gl;
     if(uniforms) {
